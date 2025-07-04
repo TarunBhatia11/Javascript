@@ -59,7 +59,7 @@ function sum(a,b){
 }
 
 let val = sum(10,20);
-console.log(val); // Output: 30
+// console.log(val); // Output: 30
 
 
 
@@ -75,5 +75,68 @@ function countVowel(str){
 }
 let str = "Hello World";
 let vowelCount = countVowel(str);
-console.log(`Number of vowels in "${str}" is ${vowelCount}`); // Output: Number of vowels in "Hello World" is 3
+// console.log(`Number of vowels in "${str}" is ${vowelCount}`); // Output: Number of vowels in "Hello World" is 3
+
+
+
+// for each loop
+
+let arr = [1,2,3,4,5];
+
+arr.forEach(function printValue(val, index, arr){
+    // console.log(val,index, arr);
+})
+
+
+
+
+
+arr.forEach(function printSquare(val){
+    let square = val * val;
+    // console.log(`square of ${val} is ${square}`);
+})
+
+
+arr.forEach((num) =>{
+    let square = num * num;
+    // console.log(`square of ${num} is ${square}`);
+})
+
+let square = (num) =>{
+    // console.log(`square of ${num} is ${num * num}`);
+    
+}
+
+arr.forEach(square);
+
+let myArr = arr.map((val) =>{
+    return val;
+})
+
+// console.log(myArr); // Output: [1, 2, 3, 4, 5]
+
+
+
+let evenNumbers = arr.filter((val) =>{
+    return val%2 == 0;
+})
+
+// console.log(evenNumbers);
+// Output: [2, 4]
+
+
+let output = arr.reduce((previousValue, CurrentValue) =>{
+    return previousValue + CurrentValue;
+}
+);
+
+// console.log(output);
+
+
+
+
+
+
+
+
 
