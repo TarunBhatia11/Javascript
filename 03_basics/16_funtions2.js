@@ -41,6 +41,39 @@ function returnSecondElement(getArray){
 
 // console.log(returnSecondElement(myNewArray)); // Output: 2
 
+ 
 
 
+function myFunction(){
+    console.log("hieee");
+    console.log("qwerty");
+}
+
+// myFunction()
+
+
+function sum(a,b){
+    s = a+b;
+    console.log("before return");
+    return s;
+}
+
+let val = sum(10,20);
+console.log(val); // Output: 30
+
+
+
+function countVowel(str){
+    let count = 0;
+    let vowels = "aeiouAEIOU";
+    for(let i = 0; i < str.length; i++){
+        if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u'){
+            count++;
+    }
+    return count;
+}
+}
+let str = "Hello World";
+let vowelCount = countVowel(str);
+console.log(`Number of vowels in "${str}" is ${vowelCount}`); // Output: Number of vowels in "Hello World" is 3
 
